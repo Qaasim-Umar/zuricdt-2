@@ -1,0 +1,110 @@
+body {
+  background-color: rgb(168, 170, 168);
+  display: flex;
+  justify-content: center;
+}
+
+.visa-card {
+  background-image: linear-gradient(
+    to right,
+    #16222a 0%,
+    #3a6073 51%,
+    #16222a 100%
+  );
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+  height: 12rem;
+  width: 20rem;
+  color: #fff;
+  z-index: 2;
+  margin-top: 4.5rem;
+  position: absolute;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-holder {
+  margin-top: 4.6rem;
+}
+.cardholder-heading {
+  font-size: 12px;
+  color: #dfdfdf;
+}
+.name {
+  margin-top: -0.7rem;
+}
+
+.expires {
+  margin-top: 4.6rem;
+}
+.date-heading {
+  font-size: 12px;
+  color: #dfdfdf;
+}
+.date {
+  margin-top: -0.7rem;
+}
+
+.info-card {
+  background-color: #fff;
+  position: relative;
+  width: 25rem;
+  height: 27rem;
+  z-index: 1;
+  border-radius: 1rem;
+  margin-top: 10rem;
+}
+
+.submit {
+  position: absolute;
+  bottom: 2rem;
+  left: 2.5rem;
+  width: 81.5%;
+  background-image: linear-gradient(
+    to right,
+    #16222a 0%,
+    #3a6073 51%,
+    #16222a 100%
+  );
+  border: none;
+  padding: 0.65rem;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.info{
+  margin-top: 9rem;
+  margin-left: 2.5rem;
+}
+.cardnumber-heading{
+  font-size: 12px;
+  color: #3a6073;
+}
+
+.small-box{
+  border: 2px solid #afafaf;
+  height: 1.7rem;
+  border-radius: 5px;
+  box-shadow: #0c5c85;
+  width: 4.1rem;
+}
+
+.card-number {
+  display: flex;
+  gap: 1rem;
+}
+
+.long-box{
+  border: 2px solid #afafaf;
+  height: 1.7rem;
+  border-radius: 5px;
+  width: 89%;
+}
