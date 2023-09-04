@@ -2,8 +2,40 @@ body {
   background-color: rgb(168, 170, 168);
   display: flex;
   justify-content: center;
+  
 }
 
+.logo1{
+  position: relative;
+  z-index: 1;
+}
+
+#logo{
+  background-image: linear-gradient(
+    to right,
+    #42494d 0%,
+    #1c485e 51%,
+    #075386 100%
+  );
+  width: 3rem;
+}
+#err{
+  font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;
+color: #e9e4e4;
+background-color: #075386;
+padding: 3px;
+border-radius: 5px;
+position: absolute;
+right: -1rem;
+bottom: 8.5rem;
+}
+
+.logo{
+  height: 3.5rem;
+  position: absolute;
+  right: .55rem;
+  top: .6rem;
+}
 .visa-card {
   background-image: linear-gradient(
     to right,
@@ -11,6 +43,8 @@ body {
     #3a6073 51%,
     #16222a 100%
   );
+  font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;
+  
   padding: 0.4rem 1rem;
   border-radius: 1rem;
   height: 12rem;
@@ -35,6 +69,7 @@ body {
   margin-top: 4.6rem;
 }
 .cardholder-heading {
+
   font-size: 12px;
   color: #dfdfdf;
 }
@@ -74,8 +109,10 @@ body {
     #3a6073 51%,
     #16222a 100%
   );
+  font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;
+
   border: none;
-  padding: 0.65rem;
+  padding: 0.55rem;
   border-radius: 2px;
   color: #fff;
 }
@@ -87,19 +124,22 @@ body {
 .cardnumber-heading{
   font-size: 12px;
   color: #3a6073;
+  margin-bottom: .5rem;
+  font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;
+
 }
 
 .small-box{
   border: 2px solid #afafaf;
   height: 1.7rem;
   border-radius: 5px;
-  box-shadow: #0c5c85;
-  width: 4.1rem;
+  width: 3.9rem;
+  background-color: #fff;
 }
 
 .card-number {
   display: flex;
-  gap: 1rem;
+  gap: .7rem;
 }
 
 .long-box{
@@ -107,4 +147,40 @@ body {
   height: 1.7rem;
   border-radius: 5px;
   width: 89%;
+}
+
+.smal-box{
+  margin-right:2rem;
+  border: 2px solid #afafaf;
+  height: 1.7rem;
+  border-radius: 5px;
+  width: 3.9rem;
+  position: relative;
+}
+
+.expiration-date{
+  display: flex;
+  justify-content: space-between;
+}
+
+.expiration-flex{
+  display: flex;
+  gap: 1rem;
+}
+
+.dropdown{
+
+  border: 2px solid #afafaf;
+  height: 1.7rem;
+  border-radius: 5px;
+  width: 4.6rem;
+  height: 2.15rem;
+  
+
+}
+
+.cvv-flex{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 4.6rem;
 }
