@@ -18,19 +18,19 @@
     <div class="visa-card">
 
         <div class="header-flex">
-            <p class="small-box" id="logo"></p>
+            <p class="smalll-box" id="logo"></p>
 
-            <p class="small-box" id="logo1"></p>
+            <p class="smalll-box" id="logo1"></p>
             <img src="img/visa.svg" class="logo" alt="visa">
         </div>
-        
+
 
 
         <div class="footer-flex">
 
             <div class="card-holder">
                 <p class="cardholder-heading">CARD HOLDER</p>
-                <p class="name">XXXXXX XXXX</p>
+                <p class="name">QAASIM XXXX</p>
             </div>
 
 
@@ -51,101 +51,85 @@
 
 
 
-
     <div class="info-card">
 
         <div class="info">
 
             <form action="" method="get" id="form">
-            
-
-            <p class="cardnumber-heading">CARD NUMBER</p>
-            <div class="card-number">
-                <input type="number" placeholder="" id="cardnumber" class="small-box">
-                <input type="number" placeholder="" id="cardnumber" class="small-box">
-                <input type="number" placeholder="" id="cardnumber" class="small-box">
-                <input type="number" placeholder="" id="cardnumber" class="small-box">
-            </div>
 
 
-            <p class="cardnumber-heading">CARD HOLDER</p>
-            <div class="card-number">
-                <input type="text" placeholder="" id="cardholder" class="long-box">
-            </div>
-
-
-
-            <div class="cvv-flex">
-                <p class="cardnumber-heading">EXPIRATION DATE</p>
-                <p class="cardnumber-heading">CVV</p>
-            </div>
-            <div class="expiration-date">
-                <div class="expiration-flex">
-
-
-
-
-
-
-
-
-
-
-                    <select name="languages" class="dropdown">
-                        <option value="">Months</option>
-                        <option value="php">january</option>
-                        <option value="java">february</option>
-                        <option value="golang">march</option>
-                        <option value="python">april</option>
-                        <option value="c#">may</option>
-                        <option value="C++">june</option>
-                        <option value="erlang">july</option>
-                        <option value="erlang">august</option>
-                        <option value="erlang">september</option>
-                        <option value="erlang">october</option>
-                        <option value="erlang">november</option>
-                        <option value="erlang">december</option>
-                    </select>
-
-
-
-
-                    <select name="languages" class="dropdown">
-                        <option value="">Year</option>
-                        <option value="php">2023</option>
-                        <option value="java">2024</option>
-                        <option value="golang">2025</option>
-                        <option value="python">2026</option>
-                        <option value="c#">2027</option>
-                        <option value="C++">2028</option>
-                        <option value="erlang">2029</option>
-                    </select>
-
-
-
-
-
-
-
+                <p class="cardnumber-heading">CARD NUMBER</p>
+                <div class="card-number">
+                    <input type="text" maxlength="4" placeholder="" id="cardnumber1" class="smallbox"
+                      required  oninput="moveToNext(this, 'cardnumber2')" autofocus>
+                    <input type="text" maxlength="4" placeholder="" id="cardnumber2" class="smallbox"
+                       required oninput="moveToNext(this, 'cardnumber3')">
+                    <input type="text" maxlength="4" placeholder="" id="cardnumber3" class="smallbox"
+                       required oninput="moveToNext(this, 'cardnumber4')">
+                    <input type="text" required maxlength="4" placeholder="" id="cardnumber4" class="smallbox">
                 </div>
 
-                <div id="err">
 
+                <p class=" cardnumber-heading">CARD HOLDER</p>
+                <div class="card-number">
+                    <input type="text" name="fullname" placeholder="" id="cardholder" required class="long-box">
                 </div>
 
-                <input type="number" required id="cvv" placeholder="" class="smal-box">
 
-            </div>
+                <div class="cvv-flex">
+                    <p class="cardnumber-heading">EXPIRATION DATE</p>
+                    <p class="cardnumber-heading">CVV</p>
+                </div>
+                <div class="expiration-date">
+                    <div class="expiration-flex">
 
+                        <select name="languages" class="dropdown" required>
+                            <option value="">Months</option>
+                            <option value="php">january</option>
+                            <option value="java">february</option>
+                            <option value="golang">march</option>
+                            <option value="python">april</option>
+                            <option value="c#">may</option>
+                            <option value="C++">june</option>
+                            <option value="erlang">july</option>
+                            <option value="erlang">august</option>
+                            <option value="erlang">september</option>
+                            <option value="erlang">october</option>
+                            <option value="erlang">november</option>
+                            <option value="erlang">december</option>
+                        </select>
 
+                        <select name="languages" class="dropdown" required>
+                            <option value="">Year</option>
+                            <option value="php">2023</option>
+                            <option value="java">2024</option>
+                            <option value="golang">2025</option>
+                            <option value="python">2026</option>
+                            <option value="c#">2027</option>
+                            <option value="C++">2028</option>
+                            <option value="erlang">2029</option>
+                            <option value="golang">2030</option>
+                            <option value="python">2031</option>
+                            <option value="c#">2032</option>
+                            <option value="C++">2033</option>
+                            <option value="erlang">2034</option>
+                        </select>
+                    </div>
+                    <div id="err" class="err">
+                    </div>
+                    <div id="name-err" class="err">
+                    </div>
+                    <input type="text" required id="cvv" placeholder="" class="smal-box" oninput="this.value = this.value.replace(/[^0-9.]/g,'').
+                        replace(/(\..*?)\..*/g,'$1');">
+                </div>
         </div>
-
-
         <button class="submit">Submit</button>
-    </form>
+        </form>
     </div>
-
     <script src="script.js"></script>
 </body>
 
 </html>
+
+
+<!-- pattern="^[A-Za-z]+ [A-Za-z]+$" -->
