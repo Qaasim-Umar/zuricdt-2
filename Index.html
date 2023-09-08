@@ -14,76 +14,47 @@
 </head>
 
 <body>
-
     <div class="visa-card">
-
         <div class="header-flex">
             <p class="smalll-box" id="logo"></p>
-
             <p class="smalll-box" id="logo1"></p>
             <img src="img/visa.svg" class="logo" alt="visa">
         </div>
-
-
-
         <div class="footer-flex">
-
             <div class="card-holder">
                 <p class="cardholder-heading">CARD HOLDER</p>
                 <p class="name">QAASIM XXXX</p>
             </div>
-
-
             <div class="expires">
                 <p class="date-heading">EXPIRES</p>
                 <P class="date">20XX/XX</P>
             </div>
-
         </div>
-
     </div>
-
-
-
-
-
-
-
-
-
     <div class="info-card">
-
         <div class="info">
-
             <form action="" method="get" id="form">
-
-
                 <p class="cardnumber-heading">CARD NUMBER</p>
                 <div class="card-number">
-                    <input type="text" maxlength="4" placeholder="" id="cardnumber1" class="smallbox"
-                      required  oninput="moveToNext(this, 'cardnumber2')" autofocus>
-                    <input type="text" maxlength="4" placeholder="" id="cardnumber2" class="smallbox"
-                       required oninput="moveToNext(this, 'cardnumber3')">
-                    <input type="text" maxlength="4" placeholder="" id="cardnumber3" class="smallbox"
-                       required oninput="moveToNext(this, 'cardnumber4')">
+                    <input type="text" maxlength="4" placeholder="" id="cardnumber1" class="smallbox" required
+                        oninput="moveToNext(this, 'cardnumber2')" autofocus>
+                    <input type="text" maxlength="4" placeholder="" id="cardnumber2" class="smallbox" required
+                        oninput="moveToNext(this, 'cardnumber3')">
+                    <input type="text" maxlength="4" placeholder="" id="cardnumber3" class="smallbox" required
+                        oninput="moveToNext(this, 'cardnumber4')">
                     <input type="text" required maxlength="4" placeholder="" id="cardnumber4" class="smallbox">
                 </div>
-
-
                 <p class=" cardnumber-heading">CARD HOLDER</p>
                 <div class="card-number">
                     <input type="text" name="fullname" placeholder="" id="cardholder" required class="long-box">
                 </div>
-
-
                 <div class="cvv-flex">
                     <p class="cardnumber-heading">EXPIRATION DATE</p>
                     <p class="cardnumber-heading">CVV</p>
                 </div>
                 <div class="expiration-date">
                     <div class="expiration-flex">
-
-                        <select name="languages" class="dropdown" required>
+                        <select name="languages" class="dropdown" id="dropdown" required>
                             <option value="">Months</option>
                             <option value="php">january</option>
                             <option value="java">february</option>
@@ -98,8 +69,7 @@
                             <option value="erlang">november</option>
                             <option value="erlang">december</option>
                         </select>
-
-                        <select name="languages" class="dropdown" required>
+                        <select name="languages" class="dropdown" id="dropdown" required>
                             <option value="">Year</option>
                             <option value="php">2023</option>
                             <option value="java">2024</option>
@@ -130,6 +100,4 @@
 </body>
 
 </html>
-
-
 <!-- pattern="^[A-Za-z]+ [A-Za-z]+$" -->

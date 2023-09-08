@@ -137,7 +137,7 @@ body {
   border: 2px solid #afafaf;
   height: 1.7rem;
   border-radius: 5px;
-  width: 3.9rem;
+  width: 17.25%;
   background-color: #fff;
 }
 
@@ -152,6 +152,7 @@ body {
 .card-number {
   display: flex;
   gap: 1rem;
+  width: 100%;
 }
 
 .long-box {
