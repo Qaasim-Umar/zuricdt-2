@@ -93,7 +93,7 @@ form.addEventListener("submit", (e) => {
     cvv !== "" &&
     dropdown !== "" 
   ) {
-    alert("Your form has been submitted successfully");
+    alert("Your payment was successful");
     document.getElementById("Form").reset();
     
   }

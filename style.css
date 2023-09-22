@@ -100,7 +100,6 @@ body {
   z-index: 1;
   border-radius: 1rem;
   margin-top: 10rem;
-  padding: 0 .3rem;
 }
 
 .submit {
@@ -135,7 +134,7 @@ body {
   border: 2px solid #afafaf;
   height: 1.7rem;
   border-radius: 5px;
-  width: 3.85rem;
+  width: 3.9rem;
   background-color: #fff;
 }
 
@@ -193,6 +192,8 @@ body {
   margin-right: 4.6rem;
 }
 
-@media (min-width: 768){
-
+@media only screen and (max-width: 768px) {
+.smallbox{
+  width: 3.32rem;
+}
 }
